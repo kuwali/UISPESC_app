@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2016 Kustiawanto Halim.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logoProgramImageView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/titleProgramTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programs"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:layout_below="@+id/logoProgramImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Make Scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/titleProgramTextView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/programFirstText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Guest Lecture" />
+
+            <TextView
+                android:id="@+id/programFirstContText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/programFirstText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="An event that discusses the latest issues in Oil and Gas industry by inviting professional speakers in specific fields of expertise" />
+
+            <TextView
+                android:id="@+id/programSecondText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_below="@id/programFirstContText"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Workshop" />
+
+            <TextView
+                android:id="@+id/programSecondContText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/programSecondText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="An educational session that would excel members’ knowledge about the technology used in the Oil and Gas industry" />
+
+            <TextView
+                android:id="@+id/programThirdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_below="@id/programSecondContText"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Career Talk" />
+
+            <TextView
+                android:id="@+id/programThirdContText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/programThirdText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="Aims to enlighten the boards, staffs, and members on deciding their future careers in the Oil and Gas industry" />
+
+            <TextView
+                android:id="@+id/programForthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_below="@id/programThirdContText"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Petrotrain" />
+
+            <TextView
+                android:id="@+id/programForthContText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/programForthText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="Lecturing course that will improve members’ technical knowledge in upstream Oil and Gas sector" />
+
+            <TextView
+                android:id="@+id/programFifthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_below="@id/programForthContText"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Oil and Gas 101" />
+
+            <TextView
+                android:id="@+id/programFifthContText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/programFifthText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="Coaching series for boards, staffs, and members about fundamental knowledge of the petroleum industry." />
+
+            <TextView
+                android:id="@+id/programSixthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_below="@id/programFifthContText"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Company Visit" />
+
+            <TextView
+                android:id="@+id/programSixthContText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/programSixthText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="A visit to the office of Oil and Gas companies, aims to discover more about company’s profile and real working environment at the office." />
+
+            <TextView
+                android:id="@+id/programSeventhText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_below="@id/programSixthContText"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Field Trip" />
+
+            <TextView
+                android:id="@+id/programSeventhContText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/programSeventhText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="An educational session that would excel members’ knowledge about the technology used in the Oil and Gas industry" />
+
+            <TextView
+                android:id="@+id/programEighthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_below="@id/programSeventhContText"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Community Outreach" />
+
+            <TextView
+                android:id="@+id/programEighthContText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/programEighthText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="Series of events held to implement the organization’s social responsibility by involving members and society at several community projects." />
+
+            <TextView
+                android:id="@+id/programNinthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_below="@id/programEighthContText"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Member Development" />
+
+            <TextView
+                android:id="@+id/programNinthContText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/programNinthText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="Series of events that would develop the members particularly in soft skills that are necessary in the working environment." />
+
+            <TextView
+                android:id="@+id/programTenthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_below="@id/programNinthContText"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Volunteer" />
+
+            <TextView
+                android:id="@+id/programTenthContText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/programTenthText"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="An activity to train members’ personal and organisation managerial skills by allowing them to give their contribution and participate in exciting a work program in certain divisions in SPE UI SC" />
+
+            <TextView
+                android:id="@+id/programEleventhText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_below="@id/programTenthContText"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="SPE UI SC’s Magazine: PETROMAX" />
+
+            <Button
+                android:id="@+id/programReadHereButton"
+                android:layout_marginTop="16dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/programEleventhText"
+                android:text="READ HERE" />
+
+            <Button
+                android:id="@+id/programVisitButton"
+                android:layout_marginTop="16dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/programReadHereButton"
+                android:text="Visit Our Schedule"
+                android:layout_marginBottom="48dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

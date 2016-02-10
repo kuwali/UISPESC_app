@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2016 Kustiawanto Halim.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logoAboutImageView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+    
+    <TextView
+        android:id="@+id/titleAboutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:layout_below="@+id/logoAboutImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Make Scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/titleAboutTextView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/aboutFirstText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:text="Society of Petroleum Engineering Universitas Indonesia Student Chapter (SPE UI SC) is a student chapter under SPE International based in Department of Chemical Engineering, Faculty of Engineering, Universitas Indonesia. We were established in 1999 and became the oldest university club in Faculty of Engineering." />
+
+            <TextView
+                android:id="@+id/aboutSecondText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/aboutFirstText"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:text="In 2016, SPE UI SC will generate breakthroughs and improvements by bringing 3 moral values as our orientation -" />
+
+            <ImageView
+                android:id="@+id/aboutCompetenceImage"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/aboutSecondText"
+                android:layout_marginTop="24dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/aboutCompetenceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/aboutCompetenceImage"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Competence" />
+
+            <ImageView
+                android:id="@+id/aboutIntegrationImage"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/aboutCompetenceText"
+                android:layout_marginTop="24dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/aboutIntegrationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/aboutIntegrationImage"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Integration" />
+
+            <ImageView
+                android:id="@+id/aboutLoyaltyImage"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/aboutIntegrationText"
+                android:layout_marginTop="24dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/aboutLoyaltyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/aboutLoyaltyImage"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Loyalty"
+                android:layout_marginBottom="48dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
