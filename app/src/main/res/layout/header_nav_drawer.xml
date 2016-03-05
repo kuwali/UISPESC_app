@@ -24,8 +24,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/ic_launcher"
-        android:scaleType="fitCenter"
+        android:src="@drawable/logo_spe_putih_panjang"
+        android:scaleType="centerInside"
+        android:layout_margin="20dp"
         android:layout_gravity="bottom"/>
 
 </FrameLayout>

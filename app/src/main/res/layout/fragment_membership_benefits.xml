@@ -21,24 +21,32 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/membership_speapp"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
         android:id="@+id/logoUIImageView"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
         android:scaleType="centerInside"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/spe_uisc_logo_copy_putih"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="32dp"
+        android:padding="0dp"/>
 
     <TextView
         android:id="@+id/titleUITextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Universitas Indonesia"
+        android:text="Member Benefits"
         android:textStyle="bold"
         android:textSize="28dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/logoUIImageView"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:textColor="#FFFFFF" />
 
     <!-- Make Scrollable -->
     <ScrollView
@@ -51,46 +59,116 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
             <TextView
-                android:id="@+id/UIFirstText"
+                android:id="@+id/benefitsFirstText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="4dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:textAlignment="center"
-                android:textSize="18dp"
-                android:text="University of Indonesia is a highly successful Indonesian university, located in Depok City, with an applied emphasis in courses and research. Our campus offers high quality learning, lecturing, and research spaces to better meet the needs of students and academics." />
+                android:text="- Get an exclusive membership card of SPE International"
+                android:textColor="#FFFFFF" />
 
             <TextView
-                android:id="@+id/UISecondText"
+                android:id="@+id/benefitsSecondText"
+                android:layout_below="@id/benefitsFirstText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/UIFirstText"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:textAlignment="center"
-                android:textSize="18dp"
-                android:text="As one of Indonesia’s leading universities, we are internationally recognized through rankings and accreditation with professional bodies. Our campus’ dedication to learning and success as an institution has produced many outstanding alumni." />
+                android:text="- Expand network with members, officers, engineers, and professionals worldwide"
+                android:textColor="#FFFFFF" />
 
             <TextView
-                android:id="@+id/UIThirdText"
+                android:id="@+id/benefitsThirdText"
+                android:layout_below="@id/benefitsSecondText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/UISecondText"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:textAlignment="center"
-                android:textSize="18dp"
-                android:text="More Info"
-                android:layout_marginBottom="48dp" />
+                android:text="- Receive discounts on every title in SPE Bookstore, including e-books"
+                android:textColor="#FFFFFF" />
 
+            <TextView
+                android:id="@+id/benefitsForthText"
+                android:layout_below="@id/benefitsThirdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="- Receive a complementary subscription to the Journal of Petroleum Technology (JPT), the Society’s flagship magazine and to other titles in their fields of interest"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/benefitsFifthText"
+                android:layout_below="@id/benefitsForthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="- Get guidance from young professionals or mentors for paper-making process and career advice"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/benefitsSixthText"
+                android:layout_below="@id/benefitsFifthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="- Discounts on registration to hundreds of conferences, workshops, and courses every year"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/benefitsSeventhText"
+                android:layout_below="@id/benefitsSixthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="- Automatically qualified for membership in the American Association of Petroleum Geologists (AAPG) and the Society of Exploration Geophysicists (SEG)"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/benefitsEighthText"
+                android:layout_below="@id/benefitsSeventhText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="- Represent Universitas Indonesia as official delegation at national or international competitions"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/benefitsNinthText"
+                android:layout_below="@id/benefitsEighthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="- Devote substantial contribution to community as the implementation of social awareness"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/benefitsReadMore"
+                android:layout_below="@id/benefitsNinthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:text="- READ MORE"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
         </RelativeLayout>
     </ScrollView>
 

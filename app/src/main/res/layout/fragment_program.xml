@@ -21,24 +21,19 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/logoProgramImageView"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/programs_speapp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/titleProgramTextView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:scaleType="centerInside"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/logo_programs"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"/>
-
-    <TextView
-        android:id="@+id/titleProgramTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Programs"
-        android:textStyle="bold"
-        android:textSize="28dp"
-        android:layout_below="@+id/logoProgramImageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
 
     <!-- Make Scrollable -->
     <ScrollView
@@ -59,7 +54,8 @@
                 android:layout_marginRight="32dp"
                 android:textSize="16dp"
                 android:textStyle="bold"
-                android:text="Guest Lecture" />
+                android:text="Guest Lecture"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programFirstContText"
@@ -69,7 +65,8 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:text="An event that discusses the latest issues in Oil and Gas industry by inviting professional speakers in specific fields of expertise" />
+                android:text="An event that discusses the latest issues in Oil and Gas industry by inviting professional speakers in specific fields of expertise"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programSecondText"
@@ -81,7 +78,8 @@
                 android:layout_below="@id/programFirstContText"
                 android:textSize="16dp"
                 android:textStyle="bold"
-                android:text="Workshop" />
+                android:text="Workshop"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programSecondContText"
@@ -91,7 +89,8 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:text="An educational session that would excel members’ knowledge about the technology used in the Oil and Gas industry" />
+                android:text="An educational session that would excel members’ knowledge about the technology used in the Oil and Gas industry"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programThirdText"
@@ -103,7 +102,8 @@
                 android:layout_below="@id/programSecondContText"
                 android:textSize="16dp"
                 android:textStyle="bold"
-                android:text="Career Talk" />
+                android:text="Career Talk"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programThirdContText"
@@ -113,7 +113,8 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:text="Aims to enlighten the boards, staffs, and members on deciding their future careers in the Oil and Gas industry" />
+                android:text="Aims to enlighten the boards, staffs, and members on deciding their future careers in the Oil and Gas industry"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programForthText"
@@ -125,7 +126,8 @@
                 android:layout_below="@id/programThirdContText"
                 android:textSize="16dp"
                 android:textStyle="bold"
-                android:text="Petrotrain" />
+                android:text="Petrotrain"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programForthContText"
@@ -135,7 +137,8 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:text="Lecturing course that will improve members’ technical knowledge in upstream Oil and Gas sector" />
+                android:text="Lecturing course that will improve members’ technical knowledge in upstream Oil and Gas sector"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programFifthText"
@@ -147,7 +150,8 @@
                 android:layout_below="@id/programForthContText"
                 android:textSize="16dp"
                 android:textStyle="bold"
-                android:text="Oil and Gas 101" />
+                android:text="Oil and Gas 101"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programFifthContText"
@@ -157,7 +161,8 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:text="Coaching series for boards, staffs, and members about fundamental knowledge of the petroleum industry." />
+                android:text="Coaching series for boards, staffs, and members about fundamental knowledge of the petroleum industry."
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programSixthText"
@@ -169,7 +174,8 @@
                 android:layout_below="@id/programFifthContText"
                 android:textSize="16dp"
                 android:textStyle="bold"
-                android:text="Company Visit" />
+                android:text="Company Visit"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programSixthContText"
@@ -179,7 +185,8 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:text="A visit to the office of Oil and Gas companies, aims to discover more about company’s profile and real working environment at the office." />
+                android:text="A visit to the office of Oil and Gas companies, aims to discover more about company’s profile and real working environment at the office."
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programSeventhText"
@@ -191,7 +198,8 @@
                 android:layout_below="@id/programSixthContText"
                 android:textSize="16dp"
                 android:textStyle="bold"
-                android:text="Field Trip" />
+                android:text="Field Trip"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programSeventhContText"
@@ -201,7 +209,8 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:text="An educational session that would excel members’ knowledge about the technology used in the Oil and Gas industry" />
+                android:text="An educational session that would excel members’ knowledge about the technology used in the Oil and Gas industry"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programEighthText"
@@ -213,7 +222,8 @@
                 android:layout_below="@id/programSeventhContText"
                 android:textSize="16dp"
                 android:textStyle="bold"
-                android:text="Community Outreach" />
+                android:text="Community Outreach"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programEighthContText"
@@ -223,7 +233,8 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:text="Series of events held to implement the organization’s social responsibility by involving members and society at several community projects." />
+                android:text="Series of events held to implement the organization’s social responsibility by involving members and society at several community projects."
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programNinthText"
@@ -235,7 +246,8 @@
                 android:layout_below="@id/programEighthContText"
                 android:textSize="16dp"
                 android:textStyle="bold"
-                android:text="Member Development" />
+                android:text="Member Development"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programNinthContText"
@@ -245,7 +257,8 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:text="Series of events that would develop the members particularly in soft skills that are necessary in the working environment." />
+                android:text="Series of events that would develop the members particularly in soft skills that are necessary in the working environment."
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programTenthText"
@@ -257,7 +270,8 @@
                 android:layout_below="@id/programNinthContText"
                 android:textSize="16dp"
                 android:textStyle="bold"
-                android:text="Volunteer" />
+                android:text="Volunteer"
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/programTenthContText"
@@ -267,34 +281,55 @@
                 android:layout_marginTop="2dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:text="An activity to train members’ personal and organisation managerial skills by allowing them to give their contribution and participate in exciting a work program in certain divisions in SPE UI SC" />
+                android:text="An activity to train members’ personal and organisation managerial skills by allowing them to give their contribution and participate in exciting a work program in certain divisions in SPE UI SC"
+                android:textColor="#FFFFFF" />
 
-            <TextView
-                android:id="@+id/programEleventhText"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/linearReadHere"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_below="@+id/programTenthContText"
                 android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp"
-                android:layout_below="@id/programTenthContText"
-                android:textSize="16dp"
-                android:textStyle="bold"
-                android:text="SPE UI SC’s Magazine: PETROMAX" />
+                android:layout_marginRight="32dp">
 
-            <Button
-                android:id="@+id/programReadHereButton"
-                android:layout_marginTop="16dp"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/programEleventhText"
-                android:text="READ HERE" />
+                <ImageView
+                    android:id="@+id/programReadHereButton"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo_buku_petromax"
+                    android:text="READ HERE" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/programEleventhText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:text="SPE UI SC’s Magazine: PETROMAX"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:layout_below="@+id/programEleventhText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="READ HERE" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
 
             <Button
                 android:id="@+id/programVisitButton"
                 android:layout_marginTop="16dp"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/programReadHereButton"
+                android:layout_below="@id/linearReadHere"
+                android:layout_marginLeft="32dp"
                 android:text="Visit Our Schedule"
                 android:layout_marginBottom="48dp" />
 

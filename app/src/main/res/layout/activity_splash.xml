@@ -22,19 +22,38 @@
     android:background="#efefef"
     tools:context=".SplashActivity">
 
-    <TextView
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome / Selamat Datang\nSPE-App is an application from SPE Universitas Indonesia Student Chapter (SPE UI SC) that provides information and entertainment related to SPE.\nLet’s begin your excellent journey with us!"
-        android:textAlignment="center" />
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:src="@drawable/background_home"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/splashImageView"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@mipmap/ic_launcher" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/spe_uisc_logo_copy_putih" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPE APP"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/splashImageView"
+        android:textSize="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#CommittedToExccellence"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/splashImageView"
+        android:textSize="20dp" />
 
 </RelativeLayout>

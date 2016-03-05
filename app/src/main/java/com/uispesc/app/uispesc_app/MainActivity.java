@@ -2,6 +2,8 @@ package com.uispesc.app.uispesc_app;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -12,7 +14,9 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.uispesc.app.uispesc_app.fragment.AboutFragment;
+import com.uispesc.app.uispesc_app.fragment.BroadcastFragment;
 import com.uispesc.app.uispesc_app.fragment.HomeFragment;
+import com.uispesc.app.uispesc_app.fragment.MembershipMainFragment;
 import com.uispesc.app.uispesc_app.fragment.ProgramFragment;
 import com.uispesc.app.uispesc_app.fragment.UIFragment;
 
@@ -74,19 +78,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragment = new ProgramFragment();
                 break;
             case R.id.membership:
-                Toast.makeText(this,"Membership",Toast.LENGTH_SHORT).show();
+                fragment = new MembershipMainFragment();
                 break;
             case R.id.trivia:
                 Toast.makeText(this,"Trivia",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.url:
-                Toast.makeText(this,"URL",Toast.LENGTH_SHORT).show();
+                String url = "http://speuisc.org/";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
                 break;
             case R.id.broadcast:
-                Toast.makeText(this,"Broadcast",Toast.LENGTH_SHORT).show();
+                fragment = new BroadcastFragment();
                 break;
             case R.id.instagram:
-                Toast.makeText(this,"Instagram",Toast.LENGTH_SHORT).show();
+                url = "https://www.instagram.com/speuisc/";
+                intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
                 break;
             default:
                 break;

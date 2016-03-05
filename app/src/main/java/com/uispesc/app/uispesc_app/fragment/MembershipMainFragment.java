@@ -17,6 +17,7 @@ package com.uispesc.app.uispesc_app.fragment;
  */
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,7 +33,11 @@ public class MembershipMainFragment extends Fragment {
         view.findViewById(R.id.membershipBenefitButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Fragment fragment = new MembershipBenefitsFragment();
+                if (fragment != null) {
+                    FragmentManager fragmentManager = getFragmentManager();
+                    fragmentManager.beginTransaction().replace(R.id.main_content_frame, fragment).commit();
+                }
             }
         });
 

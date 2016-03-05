@@ -20,18 +20,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SPE-App\nLogo SPE\nUI SC\n#CommittedtoExcellence"
-        android:textAlignment="center" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_home"
+        android:scaleType="centerCrop"/>
 
     <ImageView
         android:id="@+id/nav_drawer_logo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/welcoming_greeting"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>
 </RelativeLayout>

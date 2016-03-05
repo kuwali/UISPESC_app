@@ -19,7 +19,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/about"
-            android:title="About SPE UI SC"/>
+            android:title="About SPE UI SC" />
         <item
             android:id="@+id/ui"
             android:title="Universitas Indonesia"/>

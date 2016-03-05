@@ -21,11 +21,17 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/about_us_speapp"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
         android:id="@+id/logoAboutImageView"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
         android:scaleType="centerInside"
-        android:src="@mipmap/ic_launcher"
+        android:src="@drawable/spe_uisc_logo_copy_putih"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"/>
     
@@ -38,13 +44,15 @@
         android:textSize="28dp"
         android:layout_below="@+id/logoAboutImageView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"/>
 
     <!-- Make Scrollable -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:layout_below="@id/titleAboutTextView">
 
         <RelativeLayout
@@ -60,7 +68,8 @@
                 android:layout_marginRight="32dp"
                 android:textAlignment="center"
                 android:textSize="18dp"
-                android:text="Society of Petroleum Engineering Universitas Indonesia Student Chapter (SPE UI SC) is a student chapter under SPE International based in Department of Chemical Engineering, Faculty of Engineering, Universitas Indonesia. We were established in 1999 and became the oldest university club in Faculty of Engineering." />
+                android:text="Society of Petroleum Engineering Universitas Indonesia Student Chapter (SPE UI SC) is a student chapter under SPE International based in Department of Chemical Engineering, Faculty of Engineering, Universitas Indonesia. We were established in 1999 and became the oldest university club in Faculty of Engineering."
+                android:textColor="#FFFFFF" />
 
             <TextView
                 android:id="@+id/aboutSecondText"
@@ -73,80 +82,40 @@
                 android:layout_marginRight="32dp"
                 android:textAlignment="center"
                 android:textSize="18dp"
-                android:text="In 2016, SPE UI SC will generate breakthroughs and improvements by bringing 3 moral values as our orientation -" />
+                android:text="In 2016, SPE UI SC will generate breakthroughs and improvements by bringing 3 moral values as our orientation -"
+                android:textColor="#FFFFFF" />
 
             <ImageView
                 android:id="@+id/aboutCompetenceImage"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/aboutSecondText"
                 android:layout_marginTop="24dp"
                 android:scaleType="centerInside"
-                android:src="@mipmap/ic_launcher" />
-
-            <TextView
-                android:id="@+id/aboutCompetenceText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/aboutCompetenceImage"
-                android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp"
-                android:textAlignment="center"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:text="Competence" />
+                android:src="@drawable/competence"
+                />
 
             <ImageView
                 android:id="@+id/aboutIntegrationImage"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@id/aboutCompetenceText"
+                android:layout_below="@id/aboutCompetenceImage"
                 android:layout_marginTop="24dp"
                 android:scaleType="centerInside"
-                android:src="@mipmap/ic_launcher" />
-
-            <TextView
-                android:id="@+id/aboutIntegrationText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/aboutIntegrationImage"
-                android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp"
-                android:textAlignment="center"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:text="Integration" />
+                android:src="@drawable/integration" />
 
             <ImageView
                 android:id="@+id/aboutLoyaltyImage"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@id/aboutIntegrationText"
+                android:layout_below="@id/aboutIntegrationImage"
                 android:layout_marginTop="24dp"
                 android:scaleType="centerInside"
-                android:src="@mipmap/ic_launcher" />
-
-            <TextView
-                android:id="@+id/aboutLoyaltyText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/aboutLoyaltyImage"
-                android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp"
-                android:textAlignment="center"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:text="Loyalty"
-                android:layout_marginBottom="48dp"/>
-
+                android:layout_marginBottom="48dp"
+                android:src="@drawable/loyalty" />
         </RelativeLayout>
     </ScrollView>
-
-
 </RelativeLayout>
